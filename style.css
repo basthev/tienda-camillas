@@ -1,3 +1,9 @@
+/* titulo principal */
+@import url('https://fonts.googleapis.com/css2?family=Charmonman&display=swap');
+
+/* letra navbar */
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +16,17 @@ body{
     display: flex;
     align-items: center;
     padding: 20px;
+}
+.logo{
+    display:contents;
+    font-family: 'Charmonman', cursive;
+    
+}
+.titulo{
+    margin-left: 20rem;
+    font-weight: 600;
+    font-size: 250%;
+    color:#AE43FA;
 }
 nav{
     flex: 1;
@@ -81,7 +98,7 @@ p{
 }
 
 .header{
-    background: radial-gradient(#fff,#e6ffd6);
+    background: radial-gradient(#fff,#F4C8F8);
 }
 .header .row {
     margin-top: 2%;
@@ -211,7 +228,7 @@ small{
 /* -------- footer --------- */
 
 .footer{
-    background: #000;
+    background: #F2DAEF;
     color: #8a8a8a;
     font-size: 14px;
     padding: 60px 0 20px;
@@ -265,10 +282,50 @@ ul{
     margin-left: 20px;
     display: none;
 }
+#MenuItems{
+    font-family: 'Amaranth', sans-serif;    
+    font-size: 1.3rem;
+}
+#MenuItems li a:hover{
+    color:white !important;
+}
+#whatshapp{
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    background: white ;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#whatshapp a {
+    width: 100%;
+    text-align: center;
+}
+
+#whatshapp img{
+    width: 90px;
+    height: 90px;
+    vertical-align: middle;
+
+}
+
 /* -------------------- media query for menu --------  */
+@media only screen and (max-width: 1100px){
+.titulo {
+    margin-left: 8rem;
+}
+}
 
 @media only screen and (max-width: 800px){
-    
+    .titulo{
+        display: none;
+    }
     nav ul{
         position: absolute;
         top: 70px;
