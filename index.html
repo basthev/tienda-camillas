@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RedStore | Ecommerce Website Design</title>
+    <title>Belleza integral</title>
     <link rel="icon"  href="imagen-camillas/spa.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/plugins/ekko_lightbox.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/plugins/ekko_lightbox.js"></script>
 </head>
 <body>
     <div class="header">
@@ -15,13 +19,13 @@
             <div class="navbar">
                 <div class="logo">
                     <img src="imagen-camillas/logo.png" width="125px">
-                    <h2 class="titulo">Belleza Integral</h2>
+                    <h1 class="titulo">Belleza Integral</h1>
                 </div>
                 <nav>
                     <ul id="MenuItems"> 
                         <li><a href="">Home</a></li>
                         <li><a href="#productos">Productos</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
                 <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
@@ -40,52 +44,43 @@
     </div>
 
     <!--------- featured categories ----->
-       <div class="categories" >
+       <div class="categories "  id = "productos">
            <div class="small-container">
-                <div class="row">
-                    <div class="col-3">
                     <img src="imagen-camillas/camilla4.jpeg" >
+                    <div class="letras">
+                        <h4 class="title-l">Camilla modelo#1</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus enim beatae fugiat suscipit velit et quo quos error deserunt natus veniam sint cumque ullam, cum quia? Nulla rerum numquam nesciunt?</p>
                     </div>
-                    
-                </div>
            </div> 
+           <div class="small-container">
+            <div> 
+                <img src="imagen-camillas/camillanegra.webp" >   
+                <div class="letras">
+                    <h4 class="title-l">Camilla modelo#2</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus enim beatae fugiat suscipit velit et quo quos error deserunt natus veniam sint cumque ullam, cum quia? Nulla rerum numquam nesciunt?</p>
+                </div>                 
+            </div>
+            </div> 
+            <div class="small-container">
+                <div class="row">
+                    <img src="imagen-camillas/camilla10.jpeg">
+                    <div class="letras">
+                        <h4 class="title-l">Camilla modelo#3</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus enim beatae fugiat suscipit velit et quo quos error deserunt natus veniam sint cumque ullam, cum quia? Nulla rerum numquam nesciunt?</p>
+                    </div>
+                </div>
+           </div>
+           <div class="small-container">
+            <div class="row"> 
+                <img src="imagen-camillas/camilla11.jpeg" >
+                <div class="letras" >
+                    <h4 class="title-l">Camilla modelo#4</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus enim beatae fugiat suscipit velit et quo quos error deserunt natus veniam sint cumque ullam, cum quia? Nulla rerum numquam nesciunt?</p>
+                </div>
+            </div>
+       </div>  
         </div>     
-
-        <div class="categories" >
-            <div class="small-container">
-                 <div class="row">
-                     
-                     <div class="col-3">
-                     <img src="imagen-camillas/camillanegra.webp" >
-                     </div>
-                     
-                 </div>
-            </div> 
-         </div> 
-
-         <div class="categories" >
-            <div class="small-container">
-                 <div class="row">
-                     
-                     <div class="col-3">
-                     <img src="imagen-camillas/camilla10.jpeg">
-                     </div>
-    
-                 </div>
-            </div> 
-         </div> 
-         <div class="categories" >
-            <div class="small-container">
-                 <div class="row">
-                     
-                     <div class="col-3">
-                     <img src="imagen-camillas/camilla11.jpeg" >
-                     </div>
-                
-                 </div>
-            </div> 
-         </div>
-         <div class="formulario">
+         <div class="formulario" id = "contacto">
              <form action="">
                  <label for="name">Nombre</label>
                  <input id="name" type="text" placeholder="Nombre">
@@ -130,18 +125,7 @@
             
        <!--    js for toggle menu       -->
 
-       <script>
-           var MenuItems = document.getElementById("MenuItems");
-           MenuItems.style.maxHeight = "0px";
-           function menutoggle(){
-               if(MenuItems.style.maxHeight == "0px")
-                    {
-                        MenuItems.style.maxHeight = "200px";
-                    }else{
-                        MenuItems.style.maxHeight = "0px";
-                    }
-           }
-       </script>
+       <script src="animacion.js"></script>
          
 </body>
 </html>
